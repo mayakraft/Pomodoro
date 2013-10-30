@@ -22,6 +22,17 @@
 		D5774D4F181665A5007D4659 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5774D2E181665A5007D4659 /* UIKit.framework */; };
 		D5774D57181665A5007D4659 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5774D55181665A5007D4659 /* InfoPlist.strings */; };
 		D5774D59181665A5007D4659 /* PomodoroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5774D58181665A5007D4659 /* PomodoroTests.m */; };
+		D59225621820FAF70049684F /* Fazer.m4r in Resources */ = {isa = PBXBuildFile; fileRef = D592255D1820FAF70049684F /* Fazer.m4r */; };
+		D59225631820FAF70049684F /* Fazer.m4r in Resources */ = {isa = PBXBuildFile; fileRef = D592255D1820FAF70049684F /* Fazer.m4r */; };
+		D59225641820FAF70049684F /* Marbles.m4r in Resources */ = {isa = PBXBuildFile; fileRef = D592255E1820FAF70049684F /* Marbles.m4r */; };
+		D59225651820FAF70049684F /* Marbles.m4r in Resources */ = {isa = PBXBuildFile; fileRef = D592255E1820FAF70049684F /* Marbles.m4r */; };
+		D59225661820FAF70049684F /* Plunk Hi.m4r in Resources */ = {isa = PBXBuildFile; fileRef = D592255F1820FAF70049684F /* Plunk Hi.m4r */; };
+		D59225671820FAF70049684F /* Plunk Hi.m4r in Resources */ = {isa = PBXBuildFile; fileRef = D592255F1820FAF70049684F /* Plunk Hi.m4r */; };
+		D59225681820FAF70049684F /* Soft Ring.m4r in Resources */ = {isa = PBXBuildFile; fileRef = D59225601820FAF70049684F /* Soft Ring.m4r */; };
+		D59225691820FAF70049684F /* Soft Ring.m4r in Resources */ = {isa = PBXBuildFile; fileRef = D59225601820FAF70049684F /* Soft Ring.m4r */; };
+		D592256A1820FAF70049684F /* Poseidon.m4r in Resources */ = {isa = PBXBuildFile; fileRef = D59225611820FAF70049684F /* Poseidon.m4r */; };
+		D592256B1820FAF70049684F /* Poseidon.m4r in Resources */ = {isa = PBXBuildFile; fileRef = D59225611820FAF70049684F /* Poseidon.m4r */; };
+		D592256D1820FB6C0049684F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D592256C1820FB6C0049684F /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +66,12 @@
 		D5774D54181665A5007D4659 /* PomodoroTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PomodoroTests-Info.plist"; sourceTree = "<group>"; };
 		D5774D56181665A5007D4659 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D5774D58181665A5007D4659 /* PomodoroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PomodoroTests.m; sourceTree = "<group>"; };
+		D592255D1820FAF70049684F /* Fazer.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fazer.m4r; sourceTree = "<group>"; };
+		D592255E1820FAF70049684F /* Marbles.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = Marbles.m4r; sourceTree = "<group>"; };
+		D592255F1820FAF70049684F /* Plunk Hi.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Plunk Hi.m4r"; sourceTree = "<group>"; };
+		D59225601820FAF70049684F /* Soft Ring.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Soft Ring.m4r"; sourceTree = "<group>"; };
+		D59225611820FAF70049684F /* Poseidon.m4r */ = {isa = PBXFileReference; lastKnownFileType = file; path = Poseidon.m4r; sourceTree = "<group>"; };
+		D592256C1820FB6C0049684F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D592256D1820FB6C0049684F /* AudioToolbox.framework in Frameworks */,
 				D5774D2D181665A5007D4659 /* CoreGraphics.framework in Frameworks */,
 				D5774D2F181665A5007D4659 /* UIKit.framework in Frameworks */,
 				D5774D2B181665A5007D4659 /* Foundation.framework in Frameworks */,
@@ -103,6 +121,7 @@
 		D5774D29181665A5007D4659 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D592256C1820FB6C0049684F /* AudioToolbox.framework */,
 				D5774D2A181665A5007D4659 /* Foundation.framework */,
 				D5774D2C181665A5007D4659 /* CoreGraphics.framework */,
 				D5774D2E181665A5007D4659 /* UIKit.framework */,
@@ -130,6 +149,11 @@
 			isa = PBXGroup;
 			children = (
 				D5774D32181665A5007D4659 /* Pomodoro-Info.plist */,
+				D592255D1820FAF70049684F /* Fazer.m4r */,
+				D592255E1820FAF70049684F /* Marbles.m4r */,
+				D592255F1820FAF70049684F /* Plunk Hi.m4r */,
+				D59225601820FAF70049684F /* Soft Ring.m4r */,
+				D59225611820FAF70049684F /* Poseidon.m4r */,
 				D5774D33181665A5007D4659 /* InfoPlist.strings */,
 				D5774D36181665A5007D4659 /* main.m */,
 				D5774D38181665A5007D4659 /* Pomodoro-Prefix.pch */,
@@ -233,8 +257,13 @@
 			files = (
 				D5774D41181665A5007D4659 /* Main_iPad.storyboard in Resources */,
 				D5774D46181665A5007D4659 /* Images.xcassets in Resources */,
+				D59225681820FAF70049684F /* Soft Ring.m4r in Resources */,
+				D59225641820FAF70049684F /* Marbles.m4r in Resources */,
 				D5774D3E181665A5007D4659 /* Main_iPhone.storyboard in Resources */,
+				D59225661820FAF70049684F /* Plunk Hi.m4r in Resources */,
 				D5774D35181665A5007D4659 /* InfoPlist.strings in Resources */,
+				D59225621820FAF70049684F /* Fazer.m4r in Resources */,
+				D592256A1820FAF70049684F /* Poseidon.m4r in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +271,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D59225671820FAF70049684F /* Plunk Hi.m4r in Resources */,
+				D59225631820FAF70049684F /* Fazer.m4r in Resources */,
+				D592256B1820FAF70049684F /* Poseidon.m4r in Resources */,
+				D59225691820FAF70049684F /* Soft Ring.m4r in Resources */,
 				D5774D57181665A5007D4659 /* InfoPlist.strings in Resources */,
+				D59225651820FAF70049684F /* Marbles.m4r in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +510,7 @@
 				D5774D5E181665A5007D4659 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5774D5F181665A5007D4659 /* Build configuration list for PBXNativeTarget "PomodoroTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +519,7 @@
 				D5774D61181665A5007D4659 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
