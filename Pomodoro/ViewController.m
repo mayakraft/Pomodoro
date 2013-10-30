@@ -29,6 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+// disable sleep mode. not necessary
     [UIApplication sharedApplication].idleTimerDisabled = YES;
     sounds = @[@"Fazer",@"Marbles",@"Plunk Hi",@"Soft Ring",@"Poseidon"];
     view = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -51,6 +52,7 @@
 }
 
 -(void) end{
+    [self updateShapes]; // in the case that the app was in the background
     AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
     AudioServicesPlaySystemSound(alert);
     [slider setBackgroundColor:[UIColor colorWithRed:0.6 green:0.08 blue:0.03 alpha:1.0]];
