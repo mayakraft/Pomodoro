@@ -10,6 +10,15 @@
 
 @implementation AppDelegate
 
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    UIApplicationState state = [application applicationState];
+    // notify only if app is in the background
+    if (state == UIApplicationStateActive) {
+        [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    }
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.

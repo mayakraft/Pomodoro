@@ -20,6 +20,7 @@
     NSTimer *timer;
     NSArray *sounds;
     SystemSoundID alert;
+    UILocalNotification* localNotification;
 }
 
 @end
@@ -44,6 +45,7 @@
     NSString *soundPath =  [[NSBundle mainBundle] pathForResource:sounds[arc4random()%sounds.count] ofType:@"m4r"];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath: soundPath], &alert);
     beginTime = [NSDate date];
+    [self scheduleLocalNotification];
     [self theInfiniteLoop];
     timer = [NSTimer scheduledTimerWithTimeInterval:1.0f/1
                                              target:self selector:@selector(theInfiniteLoop) userInfo:nil repeats:YES];
@@ -74,6 +76,14 @@
     [view setBackgroundColor:[UIColor colorWithWhite:(float)seconds/TIME alpha:1.0]];
     [slider setBackgroundColor:[UIColor colorWithWhite:1.0 alpha:(float)seconds/TIME]];
     [slider setCenter:CGPointMake(view.center.x, view.center.y+(1-(float)seconds/TIME)*view.bounds.size.height)];
+}
+
+- (void)scheduleLocalNotification {
+    localNotification = [[UILocalNotification alloc] init];
+    localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:TIME];
+    localNotification.alertBody = @"Break time!";
+    localNotification.timeZone = [NSTimeZone defaultTimeZone];
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
 }
 
 - (void)didReceiveMemoryWarning{
