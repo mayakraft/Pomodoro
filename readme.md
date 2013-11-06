@@ -1,5 +1,5 @@
 # i ♥ pomodoro
 
-* screen starts dark & lightens over the next 25 min
-* local notification alert if app is in the background
-* break for as long as you want, touch screen to restart
+* screen lightens over a 25 min period
+* break time notification if the app is in the background
+* touch screen to restart
