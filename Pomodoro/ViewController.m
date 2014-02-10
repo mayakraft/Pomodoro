@@ -79,9 +79,10 @@
 }
 
 - (void)scheduleLocalNotification {
+//    NSString *emoji = @"🍎🍏🍊🍋🍒🍇🍉🍓🍑🍈🍌🍐🍍🍠🍆🍅🌽";
     localNotification = [[UILocalNotification alloc] init];
     localNotification.fireDate = [NSDate dateWithTimeIntervalSinceNow:TIME];
-    localNotification.alertBody = @"Break time!";
+    localNotification.alertBody = @"🍅";
     localNotification.timeZone = [NSTimeZone defaultTimeZone];
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
 }
